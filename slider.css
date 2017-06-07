@@ -1,0 +1,182 @@
+.content-slider {
+  position: relative;
+  margin-bottom: 30px; }
+  .content-slider:not([data-dots]) .dots, .content-slider:not([data-arrows]) .arrows {
+    display: none; }
+  .content-slider .slide-viewport {
+    overflow: hidden; }
+  .content-slider ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; }
+    .content-slider ul li {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  .content-slider .dots {
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    height: 30px;
+    line-height: 30px;
+    left: 0;
+    width: 100%; }
+    .content-slider .dots div {
+      display: inline-block;
+      height: 10px;
+      width: 10px;
+      border-radius: 5px;
+      background-color: #cccccc;
+      transition: all .5s; }
+      .content-slider .dots div:not(:last-child) {
+        margin-right: 5px; }
+      .content-slider .dots div.active {
+        background-color: #999999; }
+  .content-slider .arrows .arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px; }
+    .content-slider .arrows .arrow:hover {
+      background-color: rgba(0, 0, 0, 0.2); }
+    .content-slider .arrows .arrow.left {
+      left: 0; }
+    .content-slider .arrows .arrow.right {
+      right: 0; }
+
+.content-slider[data-length="1"][data-view="1"] ul {
+  width: 100%; }
+  .content-slider[data-length="1"][data-view="1"] ul li {
+    width: 100%; }
+
+.content-slider[data-length="1"][data-view="2"] ul {
+  width: 100%; }
+  .content-slider[data-length="1"][data-view="2"] ul li {
+    width: 50%; }
+
+.content-slider[data-length="1"][data-view="3"] ul {
+  width: 100%; }
+  .content-slider[data-length="1"][data-view="3"] ul li {
+    width: 33.33333%; }
+
+.content-slider[data-length="2"][data-view="1"] ul {
+  width: 200%; }
+  .content-slider[data-length="2"][data-view="1"] ul li {
+    width: 50%; }
+
+.content-slider[data-length="2"][data-view="2"] ul {
+  width: 200%; }
+  .content-slider[data-length="2"][data-view="2"] ul li {
+    width: 25%; }
+
+.content-slider[data-length="2"][data-view="3"] ul {
+  width: 200%; }
+  .content-slider[data-length="2"][data-view="3"] ul li {
+    width: 16.66667%; }
+
+.content-slider[data-length="3"][data-view="1"] ul {
+  width: 300%; }
+  .content-slider[data-length="3"][data-view="1"] ul li {
+    width: 33.33333%; }
+
+.content-slider[data-length="3"][data-view="2"] ul {
+  width: 300%; }
+  .content-slider[data-length="3"][data-view="2"] ul li {
+    width: 16.66667%; }
+
+.content-slider[data-length="3"][data-view="3"] ul {
+  width: 300%; }
+  .content-slider[data-length="3"][data-view="3"] ul li {
+    width: 11.11111%; }
+
+.content-slider[data-length="4"][data-view="1"] ul {
+  width: 400%; }
+  .content-slider[data-length="4"][data-view="1"] ul li {
+    width: 25%; }
+
+.content-slider[data-length="4"][data-view="2"] ul {
+  width: 400%; }
+  .content-slider[data-length="4"][data-view="2"] ul li {
+    width: 12.5%; }
+
+.content-slider[data-length="4"][data-view="3"] ul {
+  width: 400%; }
+  .content-slider[data-length="4"][data-view="3"] ul li {
+    width: 8.33333%; }
+
+.slideRight1, .slideLeft1 {
+  position: relative;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; }
+
+.slideRight1 {
+  animation-name: slideRight1; }
+
+.slideLeft1 {
+  animation-name: slideLeft1; }
+
+@keyframes slideRight1 {
+  0% {
+    left: -100%; }
+  100% {
+    left: 0%; } }
+@keyframes slideLeft1 {
+  0% {
+    right: 0%; }
+  100% {
+    right: 100%; } }
+.slideRight2, .slideLeft2 {
+  position: relative;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; }
+
+.slideRight2 {
+  animation-name: slideRight2; }
+
+.slideLeft2 {
+  animation-name: slideLeft2; }
+
+@keyframes slideRight2 {
+  0% {
+    left: -50%; }
+  100% {
+    left: 0%; } }
+@keyframes slideLeft2 {
+  0% {
+    right: 0%; }
+  100% {
+    right: 50%; } }
+.slideRight3, .slideLeft3 {
+  position: relative;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; }
+
+.slideRight3 {
+  animation-name: slideRight3; }
+
+.slideLeft3 {
+  animation-name: slideLeft3; }
+
+@keyframes slideRight3 {
+  0% {
+    left: -33.33333%; }
+  100% {
+    left: 0%; } }
+@keyframes slideLeft3 {
+  0% {
+    right: 0%; }
+  100% {
+    right: 33.33333%; } }
+
+/*# sourceMappingURL=slider.css.map */
